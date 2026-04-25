@@ -18,4 +18,11 @@ This project simulates a ransomware attack on a hybrid enterprise environment an
 - Security Architecture
 
 ## Structure
-See the /docs folder for detailed sections.
+
+- [Executive Summary](docs/01-executive-summary.md)
+- [Incident Walkthrough](docs/02-incident-walkthrough.md)
+- [Resilience Architecture](docs/03-architecture.md)
+- [Backup & Recovery](docs/04-backup-recovery.md)
+- [Threat Intelligence](docs/05-threat-intelligence.md)
+- [Testing & Improvement](docs/06-testing-improvement.md)
+- [Business Impact](docs/07-business-impact.md)
