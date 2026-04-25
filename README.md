@@ -28,4 +28,4 @@ This project simulates a ransomware attack on a hybrid enterprise environment an
 - [Business Impact](docs/07-business-impact.md)
 ## Architecture Diagram
 
-![Resilience Architecture](diagrams/resilience-architecture.png)
+![Resilience Architecture](./diagrams/resilience-architecture.png)
