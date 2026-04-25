@@ -16,3 +16,11 @@ Aligned with MITRE ATT&CK:
 - Initial Access: Phishing
 - Credential Access: Credential Dumping
 - Lateral Movement: Remote Services
+
+## Tools & Sources
+
+- MITRE ATT&CK Framework
+- CVE databases
+- Threat intelligence feeds
+- VirusTotal
+- Open-source intelligence (OSINT)
