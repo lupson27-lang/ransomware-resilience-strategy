@@ -85,13 +85,15 @@ Indicators:
 ---
 ### Investigation Commands
 
-**Check logged-in users (Windows)**
+I used the following commands to investigate suspicious activity:
+
+**Check logged-in users**
 query user
 
-**Check active network connections**
+**Check active connections to identify suspicious outbound traffic**
 netstat -ano
 
-**List running processes**
+**Inspect running processes for malicious activity**
 tasklist
 
 **PowerShell process inspection**
