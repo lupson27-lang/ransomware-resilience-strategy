@@ -62,3 +62,12 @@ Mitigation:
 ### Network Security
 - Firewalls
 - IDS/IPS systems
+
+## Business Impact Consideration
+
+If identity systems are compromised:
+- Attackers can access all systems
+- Backups can be deleted or altered
+- Recovery efforts may fail
+
+This would result in full operational disruption and extended downtime.
