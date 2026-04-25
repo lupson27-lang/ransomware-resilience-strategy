@@ -52,3 +52,13 @@ The attack was contained before full encryption, limiting impact and preserving 
 - Decision: Isolate backup systems and validate integrity
 - Reasoning: Ensure recovery capability
 - Outcome: Backups preserved and usable for recovery
+
+- What I Would Do in Real Life:
+  
+  ## Practical Actions
+  
+- Disable compromised accounts in identity provider
+- Isolate affected systems via EDR
+- Block suspicious IP addresses
+- Review authentication logs
+- Validate backup integrity and restore points
