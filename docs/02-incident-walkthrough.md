@@ -62,3 +62,77 @@ The attack was contained before full encryption, limiting impact and preserving 
 - Block suspicious IP addresses
 - Review authentication logs
 - Validate backup integrity and restore points
+
+## Technical Analysis
+
+### Detection (Logs & Indicators)
+
+**Authentication Logs (Example)**
+User: finance-admin
+Source IP: 185.XXX.XXX.12
+Location: Unusual (Eastern Europe)
+Status: Successful login after multiple failures
+
+**PowerShell Activity**
+Command: Invoke-Mimikatz
+Command: Get-Process lsass
+Command: New-PSSession -ComputerName SERVER01
+
+Indicators:
+- Unusual geolocation login
+- Credential dumping behavior
+- Remote session creation
+---
+### Investigation Commands
+
+**Check logged-in users (Windows)**
+query user
+
+**Check active network connections**
+netstat -ano
+
+**List running processes**
+tasklist
+
+**PowerShell process inspection**
+Get-Process | Where-Object {$_.ProcessName -like "powershell"}
+
+---
+
+### Containment Actions
+
+**Disable compromised account (Active Directory)**
+Disable-ADAccount -Identity "finance-admin"
+
+**Force password reset**
+Set-ADAccountPassword -Identity "finance-admin"
+
+**Isolate host (example concept)**
+- Use EDR tool to isolate endpoint from network
+
+**Block malicious IP (firewall)**
+netsh advfirewall firewall add rule name="Block Malicious IP" dir=in action=block remoteip=185.XXX.XXX.12
+
+---
+
+### Backup Verification
+
+**Check backup jobs**
+- Review backup logs in backup system (e.g., Veeam)
+
+**Validate restore point**
+- Attempt test restore of critical system
+
+---
+
+### Recovery Actions
+
+**Restore priority**
+1. Identity systems
+2. Core infrastructure
+3. Business applications
+
+**Example restore validation**
+- Verify system boots
+- Verify authentication works
+- Verify data integrity
