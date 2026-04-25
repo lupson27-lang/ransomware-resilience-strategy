@@ -38,4 +38,5 @@ Mitigation:
 - MFA enforcement
 - Privileged access isolation
 - Backup system separation
+  
   “Loss of backup integrity would prevent recovery, leading to extended business outage.”
