@@ -136,3 +136,25 @@ netsh advfirewall firewall add rule name="Block Malicious IP" dir=in action=bloc
 - Verify system boots
 - Verify authentication works
 - Verify data integrity
+## Decision Log
+
+### Decision 1: Escalation to Incident Response
+- Situation: Suspicious login + PowerShell activity
+- Decision: I triggered full incident response
+- Reasoning: Indicators of credential compromise and lateral movement
+- Tradeoff: Risk of business disruption vs risk of silent spread
+- Outcome: Early containment prevented ransomware deployment
+
+### Decision 2: Identity Containment
+- Situation: Admin credentials likely compromised
+- Decision: I prioritized securing identity systems first
+- Reasoning: Identity controls access to all systems including backups
+- Tradeoff: Immediate access disruption for users
+- Outcome: Prevented attacker persistence and re-entry
+
+### Decision 3: Backup Protection
+- Situation: Backup server accessed
+- Decision: I isolated backup infrastructure and validated integrity
+- Reasoning: Ensure recovery capability before encryption phase
+- Tradeoff: Temporary backup service interruption
+- Outcome: Backups preserved and usable for recovery
