@@ -26,3 +26,6 @@ This project simulates a ransomware attack on a hybrid enterprise environment an
 - [Threat Intelligence](docs/05-threat-intelligence.md)
 - [Testing & Improvement](docs/06-testing-improvement.md)
 - [Business Impact](docs/07-business-impact.md)
+## Architecture Diagram
+
+![Resilience Architecture](diagrams/resilience-architecture.png)
