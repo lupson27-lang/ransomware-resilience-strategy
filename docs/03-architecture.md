@@ -26,3 +26,16 @@
 ### Disaster Recovery
 - Secondary site / cloud region
 - Replication of critical systems
+
+## Key Risk Scenario
+
+If identity systems are compromised:
+- Attackers can access all systems
+- Backups can be deleted
+- Recovery becomes unreliable
+
+Mitigation:
+- MFA enforcement
+- Privileged access isolation
+- Backup system separation
+  “Loss of backup integrity would prevent recovery, leading to extended business outage.”
