@@ -1,4 +1,5 @@
 # Incident Walkthrough
+This simulation reflects real-world constraints including limited visibility, time pressure, and the need to balance security with business continuity.
 
 ## 1. Initial Compromise
 A phishing email led to credential theft of a finance administrator account.
