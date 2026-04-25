@@ -40,3 +40,25 @@ Mitigation:
 - Backup system separation
   
 “Loss of backup integrity would prevent recovery, leading to extended business outage.”
+
+## Example Tools
+
+### Identity & Access
+- Active Directory / Azure AD
+- MFA solutions
+
+### Endpoint & Detection
+- Microsoft Defender for Endpoint
+- CrowdStrike / SentinelOne
+
+### Monitoring
+- SIEM (Splunk, ELK)
+- Log analysis tools
+
+### Backup & Recovery
+- Veeam
+- Commvault
+
+### Network Security
+- Firewalls
+- IDS/IPS systems
