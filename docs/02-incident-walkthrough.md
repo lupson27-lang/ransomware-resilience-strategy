@@ -53,7 +53,7 @@ The attack was contained before full encryption, limiting impact and preserving 
 - Reasoning: Ensure recovery capability
 - Outcome: Backups preserved and usable for recovery
 
-- What I Would Do in Real Life:
+  ** What I Would Do in Real Life:
   
   ## Practical Actions
   
