@@ -29,3 +29,10 @@ This project simulates a ransomware attack on a hybrid enterprise environment an
 ## Architecture Diagram
 
 ![Resilience Architecture](./diagrams/resilience-architecture.png)
+
+## Key Decisions Demonstrated
+
+- Early escalation to incident response based on risk indicators
+- Prioritization of identity containment over delayed investigation
+- Protection of backup infrastructure to ensure recovery capability
+- Balancing business continuity with security containment actions
